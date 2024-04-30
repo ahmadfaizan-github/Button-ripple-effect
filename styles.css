@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+button {
+    position: relative;
+    height: 65px;
+    width: 130px;
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple-animation 0.5s ease-out;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform:translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+  
